@@ -21,5 +21,9 @@ namespace SpiritMod.NPCs
 				Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("ThornBloomKnife"), Main.rand.Next(40, 60));
 			}
 		}
+		  else if (npc.type == mod.GetNPC("DiseasedSlime").npc.type)
+            {
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("BismiteCrystal"),3 + Main.rand.Next(3));
+            }
 	}
 }
